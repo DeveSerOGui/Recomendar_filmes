@@ -5,31 +5,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PerguntasActivity">
+    tools:context=".Perguntas2Activity">
 
 
     <TextView
-        android:id="@+id/Pergunta1"
+        android:id="@+id/Pergunta2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="Qual o seu gênero de filme favorito?"
+        android:text="Você gostaria de assistir a um filme antigo ou um lançamento recente?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="26dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintVertical_bias="0.173" />
 
     <TextView
-        android:id="@+id/ContadorPergunta"
+        android:id="@+id/ContadorPergunta2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pergunta 1/4"
+        android:text="Pergunta 2/4"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="22dp"
@@ -41,26 +41,11 @@
         app:layout_constraintVertical_bias="0.079" />
 
     <Button
-        android:id="@+id/RespComedia"
+        android:id="@+id/RespRecente"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
-        android:text="Comédia"
-        android:textColor="@color/white"
-        app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
-
-    <Button
-        android:id="@+id/RespAcao"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/red"
-        android:text="Ação"
+        android:text="Recente"
         android:textColor="@color/white"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,29 +53,14 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.553" />
+        app:layout_constraintVertical_bias="0.48" />
 
     <Button
-        android:id="@+id/RespTerror"
+        android:id="@+id/RespAntigo"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
-        android:text="Terror"
-        android:textColor="@color/white"
-        app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
-
-    <Button
-        android:id="@+id/RespFicCien"
-        android:layout_width="190dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/red"
-        android:text="Ficção científica"
+        android:text="Antigo"
         android:textColor="@color/white"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,10 +68,25 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.38" />
 
     <Button
-        android:id="@+id/BtnConfirmar"
+        android:id="@+id/RespTantoFaz"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/red"
+        android:text="Sem preferência"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <Button
+        android:id="@+id/BtnConfirmar2"
         android:layout_width="210dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/white"

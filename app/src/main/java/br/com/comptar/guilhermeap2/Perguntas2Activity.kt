@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class Perguntas2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_perguntas2)
 
-        val btGoPerguntas1 = findViewById<Button>(R.id.btnFzrQuiz)
-        btGoPerguntas1.setOnClickListener {
-            val intent = Intent(this@MainActivity,PerguntasActivity::class.java)
+        val btGoPerguntas3 = findViewById<Button>(R.id.BtnConfirmar2)
+        btGoPerguntas3.setOnClickListener {
+            val intent = Intent(this@Perguntas2Activity, Perguntas3Activity::class.java)
             startActivity(intent)
         }
     }
