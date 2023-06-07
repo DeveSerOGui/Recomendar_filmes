@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/Pergunta1"
+        android:id="@+id/Pergunta3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/RespCidade"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="Cidade grande"
@@ -57,7 +57,7 @@
 
     <Button
         android:id="@+id/RespEspaco"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="Espaço sideral"
@@ -72,7 +72,7 @@
 
     <Button
         android:id="@+id/RespRural"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="cenário rural"

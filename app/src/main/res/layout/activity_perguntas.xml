@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/RespComedia"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="Comédia"
@@ -57,7 +57,7 @@
 
     <Button
         android:id="@+id/RespAcao"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="Ação"
@@ -72,7 +72,7 @@
 
     <Button
         android:id="@+id/RespTerror"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="Terror"
@@ -87,7 +87,7 @@
 
     <Button
         android:id="@+id/RespFicCien"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
         android:text="Ficção científica"
