@@ -13,19 +13,19 @@ class Perguntas2Activity : AppCompatActivity() {
 
         val btnRecente : Button = findViewById(R.id.RespRecente)
         btnRecente.setOnClickListener {
-            btnRecente.setBackgroundColor(Color.WHITE)
+            btnRecente.setBackgroundColor(Color.rgb(224, 17, 95))
             btnRecente.setTextColor(Color.BLACK)
         }
 
         val btnAntigo : Button = findViewById(R.id.RespAntigo)
         btnAntigo.setOnClickListener {
-            btnAntigo.setBackgroundColor(Color.WHITE)
+            btnAntigo.setBackgroundColor(Color.rgb(224, 17, 95))
             btnAntigo.setTextColor(Color.BLACK)
         }
 
         val btnSemPref: Button = findViewById(R.id.RespSemPref1)
         btnSemPref.setOnClickListener {
-            btnSemPref.setBackgroundColor(Color.WHITE)
+            btnSemPref.setBackgroundColor(Color.rgb(224, 17, 95))
             btnSemPref.setTextColor(Color.BLACK)
         }
 

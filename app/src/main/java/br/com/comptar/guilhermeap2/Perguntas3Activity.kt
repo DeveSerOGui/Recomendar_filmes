@@ -13,19 +13,19 @@ class Perguntas3Activity : AppCompatActivity() {
 
         val btnCidade : Button = findViewById(R.id.RespCidade)
         btnCidade.setOnClickListener {
-            btnCidade.setBackgroundColor(Color.WHITE)
+            btnCidade.setBackgroundColor(Color.rgb(224, 17, 95))
             btnCidade.setTextColor(Color.BLACK)
         }
 
         val btnRural : Button = findViewById(R.id.RespRural)
         btnRural.setOnClickListener {
-            btnRural.setBackgroundColor(Color.WHITE)
+            btnRural.setBackgroundColor(Color.rgb(224, 17, 95))
             btnRural.setTextColor(Color.BLACK)
         }
 
         val btnEspaco: Button = findViewById(R.id.RespEspaco)
         btnEspaco.setOnClickListener {
-            btnEspaco.setBackgroundColor(Color.WHITE)
+            btnEspaco.setBackgroundColor(Color.rgb(224, 17, 95))
             btnEspaco.setTextColor(Color.BLACK)
         }
 

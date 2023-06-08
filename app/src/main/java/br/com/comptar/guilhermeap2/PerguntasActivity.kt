@@ -13,25 +13,25 @@ class PerguntasActivity : AppCompatActivity() {
 
         val btnComedia : Button = findViewById(R.id.RespComedia)
         btnComedia.setOnClickListener {
-            btnComedia.setBackgroundColor(Color.WHITE)
+            btnComedia.setBackgroundColor(Color.rgb(224, 17, 95))
             btnComedia.setTextColor(Color.BLACK)
         }
 
         val btnAcao : Button = findViewById(R.id.RespAcao)
         btnAcao.setOnClickListener {
-            btnAcao.setBackgroundColor(Color.WHITE)
+            btnAcao.setBackgroundColor(Color.rgb(224, 17, 95))
             btnAcao.setTextColor(Color.BLACK)
         }
 
         val btnFicCien : Button = findViewById(R.id.RespFicCien)
         btnFicCien.setOnClickListener {
-            btnFicCien.setBackgroundColor(Color.WHITE)
+            btnFicCien.setBackgroundColor(Color.rgb(224, 17, 95))
             btnFicCien.setTextColor(Color.BLACK)
         }
 
         val btnTerror : Button = findViewById(R.id.RespTerror)
         btnTerror.setOnClickListener {
-            btnTerror.setBackgroundColor(Color.WHITE)
+            btnTerror.setBackgroundColor(Color.rgb(224, 17, 95))
             btnTerror.setTextColor(Color.BLACK)
         }
 
