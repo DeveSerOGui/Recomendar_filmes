@@ -10,9 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btGoPerguntas1 = findViewById<Button>(R.id.btnFzrQuiz)
-        btGoPerguntas1.setOnClickListener {
-            val intent = Intent(this@MainActivity,PerguntasActivity::class.java)
+
+        val btGoNome = findViewById<Button>(R.id.btnComecar)
+        btGoNome.setOnClickListener {
+            val intent = Intent(this@MainActivity,NomeActivity::class.java)
             startActivity(intent)
         }
     }

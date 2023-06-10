@@ -29,7 +29,7 @@
         android:id="@+id/ContadorPergunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pergunta 1/4"
+        android:text="Pergunta 1/3"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="22dp"
@@ -99,6 +99,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.657" />
+
 
     <Button
         android:id="@+id/BtnConfirmar"

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".NomeActivity">
+
+    <TextView
+        android:id="@+id/InformeNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Antes de começar, informe seu nome"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <ImageView
+        android:id="@+id/LoginImg"
+        android:layout_width="286dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126"
+        app:srcCompat="@drawable/authentication_bro" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/LayoutUsernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="250dp"
+        android:hint="Nome de usuário"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/design_default_color_background"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/white"
+        app:counterMaxLength="20">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextUsernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="21"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="456dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnFzrQuiz"
+        android:layout_width="253dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/red"
+        android:text="Fazer o quiz"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

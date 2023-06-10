@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="Qual é a sua ambientação favorita para um filme?"
+        android:text="Em relação à duração do filme, você prefere algo mais curto ou mais longo?"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="26dp"
@@ -29,7 +29,7 @@
         android:id="@+id/ContadorPergunta3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pergunta 3/4"
+        android:text="Pergunta 3/3"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="22dp"
@@ -41,41 +41,11 @@
         app:layout_constraintVertical_bias="0.079" />
 
     <Button
-        android:id="@+id/RespCidade"
+        android:id="@+id/RespCurto"
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:backgroundTint="@color/red"
-        android:text="Cidade grande"
-        android:textColor="@color/white"
-        app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48" />
-
-    <Button
-        android:id="@+id/RespEspaco"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/red"
-        android:text="Espaço sideral"
-        android:textColor="@color/white"
-        app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
-
-    <Button
-        android:id="@+id/RespRural"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/red"
-        android:text="cenário rural"
+        android:text="Curto (até 1h30)"
         android:textColor="@color/white"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,7 +53,52 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.349" />
+
+    <Button
+        android:id="@+id/RespLongo"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/red"
+        android:text="longo (mais de 2h30)"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <Button
+        android:id="@+id/RespMedio"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/red"
+        android:text="Médio (1h30 a 2h30)"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <Button
+        android:id="@+id/RespSemPref2"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/red"
+        android:text="Sem preferência"
+        android:textColor="@color/white"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
 
     <Button
         android:id="@+id/BtnConfirmar3"
@@ -95,7 +110,7 @@
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.776" />
