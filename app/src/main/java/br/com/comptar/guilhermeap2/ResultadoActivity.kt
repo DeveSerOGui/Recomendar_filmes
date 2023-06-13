@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 
 class ResultadoActivity : AppCompatActivity() {
@@ -17,12 +18,12 @@ class ResultadoActivity : AppCompatActivity() {
         nome.text = "$nomeInformado"
 
 
-        //var btGoIMDB = findViewById<Button>(R.id.ButtonIMBD)
-        //btGoIMDB.setOnClickListener {
-        //    val url = Uri.parse("https://www.imdb.br")
-        //    val intent = Intent(Intent.ACTION_VIEW, url)
-        //    startActivity(intent)
-        //}
+        val btGoIMDB = findViewById<ImageButton>(R.id.ButtonIMBD)
+        btGoIMDB.setOnClickListener {
+            val url = Uri.parse("https://www.imdb.com/")
+            val intent = Intent(Intent.ACTION_VIEW, url)
+            startActivity(intent)
+        }
 
         //var ResultadoGenero : String = PerguntasActivity().Genero
 

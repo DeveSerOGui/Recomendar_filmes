@@ -29,14 +29,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803"
+        app:layout_constraintVertical_bias="0.865"
         app:srcCompat="@drawable/imdb_internet_movie_database__1_" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="357dp"
         android:layout_height="57dp"
-        android:text="Caso queira conhecer mais filmes, clique na logo abaixo"
+        android:text="Conheça o site do IMDb, e fique atualizado sobre os melhores filmes!"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
@@ -45,6 +45,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintVertical_bias="0.74" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
