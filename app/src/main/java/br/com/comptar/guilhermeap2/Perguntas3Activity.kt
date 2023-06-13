@@ -4,11 +4,14 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 
 class Perguntas3Activity : AppCompatActivity() {
 
     private lateinit var btGoResultado : Button
+    private var selectedButton: View? = null
+    lateinit var duracao : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas3)
@@ -21,33 +24,44 @@ class Perguntas3Activity : AppCompatActivity() {
 
         val btnCurto : Button = findViewById(R.id.RespCurto)
         btnCurto.setOnClickListener {
-            btnCurto.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnCurto.setTextColor(Color.BLACK)
+            selectButton(btnCurto)
             HabiltarButtonConfirmarResposta()
+            duracao = "Curto"
         }
 
         val btnMedio: Button = findViewById(R.id.RespMedio)
         btnMedio.setOnClickListener {
-            btnMedio.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnMedio.setTextColor(Color.BLACK)
+            selectButton(btnMedio)
             HabiltarButtonConfirmarResposta()
+            duracao = "Medio"
         }
 
         val btnLongo : Button = findViewById(R.id.RespLongo)
         btnLongo.setOnClickListener {
-            btnLongo.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnLongo.setTextColor(Color.BLACK)
+            selectButton(btnLongo)
             HabiltarButtonConfirmarResposta()
+            duracao = "Longo"
         }
 
         val btnSemPref2 : Button = findViewById(R.id.RespSemPref2)
         btnSemPref2.setOnClickListener {
-            btnSemPref2.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnSemPref2.setTextColor(Color.BLACK)
+            selectButton(btnSemPref2)
             HabiltarButtonConfirmarResposta()
+            duracao = "SemPref"
         }
         desabilitarButtonConfirmarRespoasta()
     }
+
+    private fun selectButton(button: Button) {
+        selectedButton?.apply {
+            setBackgroundColor(Color.rgb(197,63,63))
+        }
+
+        button.setBackgroundColor(Color.rgb(224, 17, 95))
+        button.setTextColor(Color.WHITE)
+        selectedButton = button
+    }
+
     private fun HabiltarButtonConfirmarResposta() {
         btGoResultado.setTextColor(Color.BLACK)
         btGoResultado.setBackgroundColor(Color.rgb(40, 180, 99 ))

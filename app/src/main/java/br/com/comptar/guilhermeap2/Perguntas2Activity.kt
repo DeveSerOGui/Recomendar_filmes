@@ -4,11 +4,14 @@ import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 
 class Perguntas2Activity : AppCompatActivity() {
 
     private lateinit var btGoPerguntas3 : Button
+    private var selectedButton: View? = null
+    lateinit var data : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas2)
@@ -21,25 +24,35 @@ class Perguntas2Activity : AppCompatActivity() {
 
         val btnAntigo : Button = findViewById(R.id.RespAntigo)
         btnAntigo.setOnClickListener {
-            btnAntigo.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnAntigo.setTextColor(Color.BLACK)
+            selectButton(btnAntigo)
             HabiltarButtonConfirmarResposta()
+            data = "Antigo"
         }
 
         val btnRecente : Button = findViewById(R.id.RespRecente)
         btnRecente.setOnClickListener {
-            btnRecente.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnRecente.setTextColor(Color.BLACK)
+            selectButton(btnRecente)
             HabiltarButtonConfirmarResposta()
+            data = "Recente"
         }
 
         val btnSemPref2: Button = findViewById(R.id.RespSemPref2)
         btnSemPref2.setOnClickListener {
-            btnSemPref2.setBackgroundColor(Color.rgb(224, 17, 95))
-            btnSemPref2.setTextColor(Color.BLACK)
+            selectButton(btnSemPref2)
             HabiltarButtonConfirmarResposta()
+            data = "SemPref"
         }
         desabilitarButtonConfirmarRespoasta()
+    }
+
+    private fun selectButton(button: Button) {
+        selectedButton?.apply {
+            setBackgroundColor(Color.rgb(197,63,63))
+        }
+
+        button.setBackgroundColor(Color.rgb(224, 17, 95))
+        button.setTextColor(Color.WHITE)
+        selectedButton = button
     }
 
     private fun HabiltarButtonConfirmarResposta() {
