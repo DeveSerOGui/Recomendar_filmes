@@ -18,7 +18,7 @@ class NomeActivity : AppCompatActivity() {
             val nomeInformado = editTextNomeInformado.text.toString().trim()
             if (nomeInformado.isNotEmpty() && nomeInformado != "Insira um nome!") {
                 val intent = Intent(this@NomeActivity, PerguntasActivity::class.java)
-                intent.putExtra("name", nomeInformado)
+                SharedData.nome = nomeInformado
                 startActivity(intent)
             } else {
                 editTextNomeInformado.setTextColor(Color.WHITE)

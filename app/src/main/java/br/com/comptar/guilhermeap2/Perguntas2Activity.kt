@@ -11,7 +11,6 @@ class Perguntas2Activity : AppCompatActivity() {
 
     private lateinit var btGoPerguntas3 : Button
     private var selectedButton: View? = null
-    lateinit var data : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas2)
@@ -26,21 +25,18 @@ class Perguntas2Activity : AppCompatActivity() {
         btnAntigo.setOnClickListener {
             selectButton(btnAntigo)
             HabiltarButtonConfirmarResposta()
-            data = "Antigo"
         }
 
         val btnRecente : Button = findViewById(R.id.RespRecente)
         btnRecente.setOnClickListener {
             selectButton(btnRecente)
             HabiltarButtonConfirmarResposta()
-            data = "Recente"
         }
 
         val btnSemPref2: Button = findViewById(R.id.RespSemPref2)
         btnSemPref2.setOnClickListener {
             selectButton(btnSemPref2)
             HabiltarButtonConfirmarResposta()
-            data = "SemPref"
         }
         desabilitarButtonConfirmarRespoasta()
     }

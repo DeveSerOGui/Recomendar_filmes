@@ -13,9 +13,11 @@ class ResultadoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resultado)
 
-        val nomeInformado = intent.getStringExtra("name")
+
         val nome : TextView = findViewById(R.id.Username)
-        nome.text = "$nomeInformado"
+        nome.text = "${SharedData.nome}, de acordo com suas respostas te recomendamos:"
+
+
 
 
         val btGoIMDB = findViewById<ImageButton>(R.id.ButtonIMBD)

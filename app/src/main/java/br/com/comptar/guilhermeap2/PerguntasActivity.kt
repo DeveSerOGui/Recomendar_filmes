@@ -11,7 +11,6 @@ class PerguntasActivity : AppCompatActivity() {
 
     private lateinit var btGoPerguntas2 : Button
     private var selectedButton: View? = null
-    lateinit var Genero : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas)
@@ -26,28 +25,25 @@ class PerguntasActivity : AppCompatActivity() {
         btnComedia.setOnClickListener {
             selectButton(btnComedia)
             HabiltarButtonConfirmarResposta()
-            Genero = "Comedia"
+            SharedData.genero = 10
         }
 
         val btnAcao : Button = findViewById(R.id.RespAcao)
         btnAcao.setOnClickListener {
             selectButton(btnAcao)
             HabiltarButtonConfirmarResposta()
-            Genero = "Ação"
         }
 
         val btnFicCien : Button = findViewById(R.id.RespFicCien)
         btnFicCien.setOnClickListener {
             selectButton(btnFicCien)
             HabiltarButtonConfirmarResposta()
-            Genero = "FicCien"
         }
 
         val btnTerror : Button = findViewById(R.id.RespTerror)
         btnTerror.setOnClickListener {
             selectButton(btnTerror)
             HabiltarButtonConfirmarResposta()
-            Genero = "Terror"
         }
 
         desabilitarButtonConfirmarRespoasta()

@@ -11,7 +11,6 @@ class Perguntas3Activity : AppCompatActivity() {
 
     private lateinit var btGoResultado : Button
     private var selectedButton: View? = null
-    lateinit var duracao : String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas3)
@@ -26,28 +25,24 @@ class Perguntas3Activity : AppCompatActivity() {
         btnCurto.setOnClickListener {
             selectButton(btnCurto)
             HabiltarButtonConfirmarResposta()
-            duracao = "Curto"
         }
 
         val btnMedio: Button = findViewById(R.id.RespMedio)
         btnMedio.setOnClickListener {
             selectButton(btnMedio)
             HabiltarButtonConfirmarResposta()
-            duracao = "Medio"
         }
 
         val btnLongo : Button = findViewById(R.id.RespLongo)
         btnLongo.setOnClickListener {
             selectButton(btnLongo)
             HabiltarButtonConfirmarResposta()
-            duracao = "Longo"
         }
 
         val btnSemPref2 : Button = findViewById(R.id.RespSemPref2)
         btnSemPref2.setOnClickListener {
             selectButton(btnSemPref2)
             HabiltarButtonConfirmarResposta()
-            duracao = "SemPref"
         }
         desabilitarButtonConfirmarRespoasta()
     }
