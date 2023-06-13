@@ -25,24 +25,28 @@ class Perguntas3Activity : AppCompatActivity() {
         btnCurto.setOnClickListener {
             selectButton(btnCurto)
             HabiltarButtonConfirmarResposta()
+            SharedData.duracao = 10
         }
 
         val btnMedio: Button = findViewById(R.id.RespMedio)
         btnMedio.setOnClickListener {
             selectButton(btnMedio)
             HabiltarButtonConfirmarResposta()
+            SharedData.duracao = 20
         }
 
         val btnLongo : Button = findViewById(R.id.RespLongo)
         btnLongo.setOnClickListener {
             selectButton(btnLongo)
             HabiltarButtonConfirmarResposta()
+            SharedData.duracao = 30
         }
 
         val btnSemPref2 : Button = findViewById(R.id.RespSemPref2)
         btnSemPref2.setOnClickListener {
             selectButton(btnSemPref2)
             HabiltarButtonConfirmarResposta()
+            SharedData.duracao = 40
         }
         desabilitarButtonConfirmarRespoasta()
     }

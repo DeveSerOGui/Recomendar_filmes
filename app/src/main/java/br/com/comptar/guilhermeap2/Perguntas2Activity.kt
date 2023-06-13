@@ -25,18 +25,21 @@ class Perguntas2Activity : AppCompatActivity() {
         btnAntigo.setOnClickListener {
             selectButton(btnAntigo)
             HabiltarButtonConfirmarResposta()
+            SharedData.lancamento = 10
         }
 
         val btnRecente : Button = findViewById(R.id.RespRecente)
         btnRecente.setOnClickListener {
             selectButton(btnRecente)
             HabiltarButtonConfirmarResposta()
+            SharedData.lancamento = 20
         }
 
         val btnSemPref2: Button = findViewById(R.id.RespSemPref2)
         btnSemPref2.setOnClickListener {
             selectButton(btnSemPref2)
             HabiltarButtonConfirmarResposta()
+            SharedData.lancamento = 30
         }
         desabilitarButtonConfirmarRespoasta()
     }

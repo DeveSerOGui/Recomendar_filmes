@@ -32,18 +32,21 @@ class PerguntasActivity : AppCompatActivity() {
         btnAcao.setOnClickListener {
             selectButton(btnAcao)
             HabiltarButtonConfirmarResposta()
+            SharedData.genero = 20
         }
 
         val btnFicCien : Button = findViewById(R.id.RespFicCien)
         btnFicCien.setOnClickListener {
             selectButton(btnFicCien)
             HabiltarButtonConfirmarResposta()
+            SharedData.genero = 30
         }
 
         val btnTerror : Button = findViewById(R.id.RespTerror)
         btnTerror.setOnClickListener {
             selectButton(btnTerror)
             HabiltarButtonConfirmarResposta()
+            SharedData.genero = 40
         }
 
         desabilitarButtonConfirmarRespoasta()
