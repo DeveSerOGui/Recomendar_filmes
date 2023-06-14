@@ -29,67 +29,98 @@ class ResultadoActivity : AppCompatActivity() {
         if (SharedData.genero == 10){
             if(SharedData.lancamento == 10){
                 val nomeFilme : TextView = findViewById(R.id.Resultado)
-                nomeFilme.text ="O Gordo e o Magro,\n" +
-                                "O Poderoso Chefão,\n" +
+                nomeFilme.text ="O Gordo e o Magro\n"+
+                                "O Poderoso Chefão\n"+
                                 "Amarcord"
             }
             if(SharedData.lancamento == 20){
                 val nomeFilme : TextView = findViewById(R.id.Resultado)
-                nomeFilme.text =
+                nomeFilme.text ="Gente grande\n"+
+                                "Esposa de Mentirinha\n"+
+                                "Se beber não case"
             }
             if(SharedData.lancamento == 30){
                 val nomeFilme : TextView = findViewById(R.id.Resultado)
-                nomeFilme.text =
-            }
-            if(SharedData.lancamento == 40){
-                val nomeFilme : TextView = findViewById(R.id.Resultado)
-                nomeFilme.text =
+                nomeFilme.text ="O Gordo e o Magro\n"+
+                                "O Poderoso Chefão\n"+
+                                "Amarcord\n"+
+                                "Gente grande\n"+
+                                "Esposa de Mentirinha\n"+
+                                "Se beber não case"
             }
         }
         //Açao
         if (SharedData.genero == 20){
             if(SharedData.lancamento == 10){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="007: O Amanhã Nunca Morre\n"+
+                                "Difícil de Matar\n"+
+                                "Missão: Impossível"
             }
             if(SharedData.lancamento == 20){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="Top Gun: Maverick\n"+
+                                "A Origem\n"+
+                                "John Wick 3"
             }
             if(SharedData.lancamento == 30){
-
-            }
-            if(SharedData.lancamento == 40){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="007: O Amanhã Nunca Morre\n"+
+                                "Difícil de Matar\n"+
+                                "Missão: Impossível\n"+
+                                "Top Gun\n"+
+                                "A Origem\n"+
+                                "John Wick 3"
             }
         }
         //FicCienc
         if (SharedData.genero == 30){
             if(SharedData.lancamento == 10){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="Star Wars: Episódio IV\n"+
+                                "Robocop - O Policial do Futuro\n"+
+                                "Independence Day"
             }
             if(SharedData.lancamento == 20){
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="Duna\n"+
+                                "Interestelar\n"+
+                                "Avatar: O Caminho da Água"
 
             }
             if(SharedData.lancamento == 30){
-
-            }
-            if(SharedData.lancamento == 40){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="Star Wars: Episódio IV\n"+
+                                "Robocop - O Policial do Futuro\n"+
+                                "Independence Day\n"+
+                                "Duna\n"+
+                                "Interestelar\n"+
+                                "Avatar: O Caminho da Água"
             }
         }
 
         //Terror
         if (SharedData.genero == 40){
             if(SharedData.lancamento == 10){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="Panico 1\n"+
+                                "Massacre da serra eletrica\n"+
+                                "A Hora do Pesadelo"
             }
             if(SharedData.lancamento == 20){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="A Morte do Demônio: A Ascensão\n"+
+                                "Pânico 6\n"+
+                                "Disappointment Blvd"
             }
             if(SharedData.lancamento == 30){
-
-            }
-            if(SharedData.lancamento == 40){
-
+                val nomeFilme : TextView = findViewById(R.id.Resultado)
+                nomeFilme.text ="Panico 1\n"+
+                                "Massacre da serra eletrica\n"+
+                                "A Hora do Pesadelo\n"+
+                                "A Morte do Demônio: A Ascensão\n"+
+                                "Pânico 6\n"+
+                                "Disappointment Blvd"
             }
         }
 //        val filmesComedia = listOf(
