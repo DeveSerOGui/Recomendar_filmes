@@ -15,6 +15,12 @@ class Perguntas3Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_perguntas3)
 
+        if(savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, fragment_btn())
+                .commit()
+        }
+
         btGoResultado = findViewById<Button>(R.id.BtnConfirmar3)
         btGoResultado.setOnClickListener {
             val intent = Intent(this@Perguntas3Activity, ResultadoActivity::class.java)
